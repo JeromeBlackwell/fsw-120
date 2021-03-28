@@ -1,5 +1,5 @@
 import React from "react"
-import './App.css'
+// import './App.css'
 import Colored from "./colored.js"
 
 function App() {

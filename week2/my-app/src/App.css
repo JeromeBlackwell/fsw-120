@@ -1,5 +1,5 @@
-/* .App.{
-;
+App{
+background: rgb(150, 150, 233);
 }
 
 .App-logo {
@@ -35,4 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
