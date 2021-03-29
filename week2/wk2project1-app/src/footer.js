@@ -1,0 +1,11 @@
+mport React from "react"
+
+const Navbar = () =>{
+    return (
+        <div>
+            <h1>Good Day!</h1>
+        </div>
+    )
+}
+
+export default footer
