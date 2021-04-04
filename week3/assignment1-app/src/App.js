@@ -1,14 +1,20 @@
-import React from "react"
-import Superhero,{Component} from "superhero"
-import './App';
-function App() {
+import React,{Component} from "react"
+import Superhero from "./superhero"
+import Shdata from "./shdata"
+import './App.css';
+// function App() {
   class App extends Component {
     render () {
     return (
     <div className="App">
-      <SuperHero />
+    {Shdata.map (card => {
+      console.log (card)
+
+      return(<Superhero card ={card} />)
+    })}
+      
     </div>
     )}
   }   
-}
+// }
 export default App;
