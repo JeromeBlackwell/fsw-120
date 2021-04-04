@@ -8,7 +8,7 @@ class Card extends React.Component {
     }
     render() {
         return (
-            // either <div className="onecard">
+            
             <div style={{backgroundColor: "gray"}} onClick={shoot}> 
                 <h2 style={{fontSize: 40}}>{this.props.card.name}</h2>
                 <h5 style={{fontSize: 30}}>{this.props.card.show}</h5>
