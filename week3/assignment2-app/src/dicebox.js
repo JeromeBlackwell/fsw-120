@@ -1,7 +1,11 @@
-import React from "react";
-class DiceBox extends React.Component {
-  constructor() {
-    super();
+import React, {Component} from "react"
+import DiceBox from "./dicebox"
+class A extends B {  
+  constructor () {
+  }
+}
+    super()
+  
     this.state = {
       num1: 0,
       real1: "true",
@@ -14,7 +18,7 @@ class DiceBox extends React.Component {
       num5: 0,
       real5: "true",
     };
-  }
+
   handleClick = () => {
     if (this.state.real1 === "true") {
       this.setState({
@@ -79,7 +83,8 @@ class DiceBox extends React.Component {
       });
     }
   };
-  render() {
+  
+  render(); {
     return (
       <div>
         <h1 onClick={this.singleDie1} className="box">{this.state.num1}</h1>
@@ -95,6 +100,5 @@ class DiceBox extends React.Component {
         <button onClick={this.handleClick}>ROLL!</button>
       </div>
     );
-  }
-}
-export default DiceBox;
+  }  
+export default DiceBox

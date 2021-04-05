@@ -1,10 +1,16 @@
+import React, {Component} from "react"
+import DiceBox from "./dicebox"
 import './App.css';
-import DiceBox from "./components/DiceBox"
-function App() {
-  return (
+// function App() {
+  class App extends Component {
+    render () {
+    return (
     <div className="App">
-    <DiceBox />
+    {DiceBox.map (card => { 
+      console.log (card) 
+      return(<DiceBox card ={card} />)
+    })}
     </div>
-  );
+  )}
 }
 export default App;
