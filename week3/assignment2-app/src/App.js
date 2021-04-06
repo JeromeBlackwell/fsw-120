@@ -6,10 +6,11 @@ import './App.css';
     render () {
     return (
     <div className="App">
-    {DiceBox.map (card => { 
+    {/* {DiceBox.map (card => { 
       console.log (card) 
       return(<DiceBox card ={card} />)
-    })}
+    })} */}
+    <DiceBox />
     </div>
   )}
 }

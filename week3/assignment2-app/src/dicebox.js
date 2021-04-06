@@ -1,9 +1,8 @@
 import React, {Component} from "react"
-import DiceBox from "./dicebox"
-class A extends B {  
+// import DiceBox from "./dicebox"
+class DiceBox extends Component {  
   constructor () {
-  }
-}
+ 
     super()
   
     this.state = {
@@ -18,7 +17,7 @@ class A extends B {
       num5: 0,
       real5: "true",
     };
-
+  }
   handleClick = () => {
     if (this.state.real1 === "true") {
       this.setState({
@@ -84,7 +83,7 @@ class A extends B {
     }
   };
   
-  render(); {
+  render() {
     return (
       <div>
         <h1 onClick={this.singleDie1} className="box">{this.state.num1}</h1>
@@ -100,5 +99,5 @@ class A extends B {
         <button onClick={this.handleClick}>ROLL!</button>
       </div>
     );
-  }  
+  }}  
 export default DiceBox
