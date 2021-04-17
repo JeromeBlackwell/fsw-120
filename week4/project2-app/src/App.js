@@ -72,11 +72,12 @@ render() {
             onChange={this.handleChange}
             
         />
-
+    <div><Badge variant="week4Project2">Week4 Project2</Badge>{' '}
             <h1>{this.state.firstName} {this.state.lastName}</h1>
             <h1>{this.state.email} {this.state.placeOfBirth}</h1>
             <h1>{this.state.phone} {this.state.favoriteFood}</h1>
             <button><Submit></Submit></button>
+    </div>
         </form>
 
         )  
