@@ -72,17 +72,18 @@ render() {
             onChange={this.handleChange}
             
         />
+    
     <div>
-        <h1>Fsw-120 Week2 <Badge variant="info">Project2</Badge></h1>
-    </div>
+            <Badge>Fsw-120 Week4 Project 2 </Badge>
             <h1>{this.state.firstName} {this.state.lastName}</h1>
             <h1>{this.state.email} {this.state.placeOfBirth}</h1>
             <h1>{this.state.phone} {this.state.favoriteFood}</h1>
-            <button><Submit></Submit></button>
+            <button>Submit</button>
+    </div>
     
         </form>
 
         )  
     }
 }
-  default export App
+export default App
