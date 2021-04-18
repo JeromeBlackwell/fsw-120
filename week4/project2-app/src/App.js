@@ -1,7 +1,7 @@
-import { getDefaultNormalizer } from "@testing-library/dom"
-import { render } from "@testing-library/react"
+// import { getDefaultNormalizer } from "@testing-library/dom"
+// import { render } from "@testing-library/react"
 import React, {Component} from "react"
-
+import Badge from "./Badge"
 class App extends Component {
   constructor() {
     super ()
@@ -15,10 +15,15 @@ class App extends Component {
         }
         this.handleChange = this.handleChange.bind(this) 
     }
+handleChange(event) {
+const {name, value, type, checked} = event.target
+type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [value] :value})
+}
 
 render() {
   return (
-    <form onSubmit={this.handleSubmit}>
+    // <form onSubmit={this.handleSubmit}>
+    <form>
         <input
           type="text"
           value={this.state.firstName}
@@ -66,19 +71,19 @@ render() {
             placeholder="Favorite Food"
             onChange={this.handleChange}
         />
-        <br />
+        {/* <br />
             <textarea
             value={"some default value"}
             onChange={this.handleChange}
             
-        />
+        /> */}
     
     <div>
-            <Badge>Fsw-120 Week4 Project 2 </Badge>
+            <Badge Fsw-120 Week4 Project2 />
             <h1>{this.state.firstName} {this.state.lastName}</h1>
             <h1>{this.state.email} {this.state.placeOfBirth}</h1>
             <h1>{this.state.phone} {this.state.favoriteFood}</h1>
-            <button>Submit</button>
+            <h1><button>Submit</button></h1>
     </div>
     
         </form>
