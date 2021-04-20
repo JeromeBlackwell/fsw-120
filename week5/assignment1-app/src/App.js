@@ -13,11 +13,11 @@ function App() {
     return (
       <div>
           <Navbar/>
-          <switch>
+          <Switch>
               <Route path="/" component={Home}/>
               <Route path="/about" component={About}/>
               <Route path="/Services" component={Services}/>
-          </switch>
+          </Switch>
       </div>
     )
 }

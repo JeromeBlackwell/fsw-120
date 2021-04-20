@@ -9,20 +9,36 @@ class App extends Component {
         firstName: "",
         lastName: "",
         email: "",
-        PlaceOfBirth:"",
-        Phone:"",
-        FavoriteFood: ""
+        placeOfBirth:"",
+        phone:"",
+        favoriteFood: "",
+        
+    badges:[]  
         }
-        this.handleChange = this.handleChange.bind(this) 
+         
     }
-handleChange(event) {
+handleChange= (event) => {
 const {name, value, type, checked} = event.target
 type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name] :value})
 }
+handleSubmit= (event) => {
+    event.preventDefault()
+    console.log (this.state)
 
+this.setState({badges : [...this.state.badges,{
+    firstName: this.state.firstName,
+    lastName: this.state.lastName,
+    email: this.state.email,
+    placeOfBirth: this.state.placeOfBirth,
+    phone: this.state.phone,
+    favoriteFood: this.state.favoriteFood,  
+}]})
+
+}
 render() {
   return (
     // <form onSubmit={this.handleSubmit}>
+    <section>
     <form>
         <input
           type="text"
@@ -79,15 +95,22 @@ render() {
         /> */}
     
     <div>
-            <Badge Fsw-120 Week4 Project2 />
+            
             <h1>{this.state.firstName} {this.state.lastName}</h1>
             <h1>{this.state.email} {this.state.placeOfBirth}</h1>
             <h1>{this.state.phone} {this.state.favoriteFood}</h1>
-            <h1><button>Submit</button></h1>
+            <h1><button onClick={this.handleSubmit}>Submit</button></h1>
     </div>
     
         </form>
+    {this.state.badges.map(
+        badge =>(
+            <Badge {...badge}Fsw-120 Week4 Project2 />
 
+        )
+    )}
+    </section>
+    
         )  
     }
 }
