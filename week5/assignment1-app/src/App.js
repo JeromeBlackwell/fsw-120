@@ -12,7 +12,7 @@ import Services from "./Services"
 function App() {
     return (
       <div>
-          <Navbar/>
+          <Navbar class="navbar"/>
           <Switch>
               <Route path="/" component={Home}/>
               <Route path="/about" component={About}/>
