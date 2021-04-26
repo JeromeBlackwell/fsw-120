@@ -1,7 +1,59 @@
 body {
-  background-image: 
+  background-image: url(/src/plumberbackground.jpg)
   }
 
-#navbar {
-  background-color: grey;
+h1 {
+  color: rgb(176, 177, 247);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 70px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+}
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(99, 227, 236);
+  font-size: 35px;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  rgb(23, 241, 15);
+  font-size: 30px;
+  margin-left: 450px;
+  margin-right: 450px; 
+
+}
+h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  rgb(176, 177, 247);
+  font-size: 30px;
+  margin-left: 540px;
+  margin-right: 540px; 
+
+}
+h5 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  rgb(176, 177, 247);
+  font-size: 30px;
+  margin-left: 485px;
+  margin-right: 485px; 
+
+}
+
+.navbar {
+  color: tan;
+  background-color: rgb(212, 17, 17);
+}
+
+.main {
+  color:  rgb(23, 241, 15);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.services {
+  color:  rgb(23, 241, 15);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

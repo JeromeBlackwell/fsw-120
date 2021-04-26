@@ -4,8 +4,12 @@ function Footer() {
     return (
       <div>
           <img src=""></img>
-          <h1>FOOTER</h1>
-
+          <h1>BLACKWELL PLUMBING</h1>
+          <h2>4524 Brink Road</h2>
+          <h3>Baltimore, Maryland 21217</h3>
+          <h3>(443)484-8737</h3>
+          <br></br>
+          <h4>created by:  Jerome Blackwell</h4>
       </div>
     )
 }
